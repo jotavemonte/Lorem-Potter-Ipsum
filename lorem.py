@@ -18,11 +18,14 @@ def lorem_generator(paragraphs_number):
         conective_flag = 0
         paragraphslen_rr = randint(80,150)
         for j in range(paragraphslen_rr):
-            comma_rr = np.random.randint(4,15)
+            comma_rr = randint(4,15)
             if conective_flag == 3:
-                lorem += CONECTIVES_LIST[randint(0,len_conectives)] + " "
-		conective_flag = 0
-            lorem = lorem + WORDS_LIST[randint(0,len_words)] + " "
+                lorem += CONECTIVES_LIST[randint(0,len_conectives-1)] + " "
+                conective_flag = 0
+            if j==0 or (lorem[-1]=='n' and lorem[-2]=="\\"):
+                lorem += WORDS_LIST[randint(0,len_words-1)].title() + " "
+            else:
+                lorem += WORDS_LIST[randint(0,len_words-1)] + " "
             conective_flag += 1
         lorem += "\n\n"
     return lorem
