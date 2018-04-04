@@ -8,7 +8,6 @@ def lorem_generator(paragraphs_number):
                          'calvario','cantis','carpe','retractum','cave','inimicum','cistem','aperio','colloportus','colloshoo','colovaria','cofundo','ventus','duo','vara',
                          'verto','verdimillious']
                      #Source: http://harrypotter.wikia.com/wiki/List_of_spells (Inseridas manualmente)
-    #pontuation = ",.!?"
     #rr stands for repeat rule (after x events will ocur, where x is the number designated for each variable)
     numberof_paragraphs = range(paragraphs_number)
     conectives_rr       = 3 #Could variate randomly. It will be analised later
