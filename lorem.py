@@ -24,7 +24,7 @@ def lorem_generator(paragraphs_number):
 		conective_flag = 0
             lorem = lorem + WORDS_LIST[randint(0,len_words)] + " "
             conective_flag += 1
-        lorem += ".\n\n"
+        lorem += "\n\n"
     return lorem
 
 #teste
