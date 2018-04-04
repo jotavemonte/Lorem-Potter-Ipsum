@@ -15,13 +15,13 @@ def lorem_generator(paragraphs_number):
     len_conectives = len(CONECTIVES_LIST)
     len_words = len(WORDS_LIST)
     for i in numberof_paragraphs:
-        conective_flag      = 1
-        paragraphslen_rr    = randint(80,150)
+        conective_flag = 0
+        paragraphslen_rr = randint(80,150)
         for j in range(paragraphslen_rr):
             comma_rr = np.random.randint(4,15)
             if conective_flag == 3:
                 lorem += CONECTIVES_LIST[randint(0,len_conectives)] + " "
-		conective_flag = 1
+		conective_flag = 0
             lorem = lorem + WORDS_LIST[randint(0,len_words)] + " "
             conective_flag += 1
         lorem += ".\n\n"
