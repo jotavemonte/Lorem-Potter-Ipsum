@@ -28,5 +28,5 @@ def lorem_generator(paragraphs_number):
     return lorem
 
 #teste
-if __name__='__main__':
+if __name__=='__main__':
     print(lorem_generator(3))
