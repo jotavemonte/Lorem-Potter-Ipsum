@@ -10,10 +10,10 @@ def lorem_generator(paragraphs_number):
                      #Source: http://harrypotter.wikia.com/wiki/List_of_spells (Inseridas manualmente)
     #rr stands for repeat rule (after x events will ocur, where x is the number designated for each variable)
     numberof_paragraphs = range(paragraphs_number)
-    conectives_rr       = 3 #Could variate randomly. It will be analised later
-    lorem               = ""
-    len_conectives      = len(CONECTIVES_LIST)
-    len_words           = len(WORDS_LIST)
+    conectives_rr = 3 #Could variate randomly. It will be analised later
+    lorem = ""
+    len_conectives = len(CONECTIVES_LIST)
+    len_words = len(WORDS_LIST)
     for i in numberof_paragraphs:
         conective_flag      = 1
         paragraphslen_rr    = randint(80,150)
